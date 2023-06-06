@@ -1,0 +1,26 @@
+@mixin btnPrymary {
+  width: fit-content;
+  border: 0;
+  color: #ffffff;
+  background-color: $cyan;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+@mixin linkPrymary {
+  width: fit-content;
+  border: 0;
+  color: $gray;
+  background-color: transparent;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #ffffff;
+    background-color: $cyan;
+  }
+}

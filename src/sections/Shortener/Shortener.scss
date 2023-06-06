@@ -1,0 +1,72 @@
+@import "../../assets/sass/colors";
+@import "../../assets/sass/generalMixins";
+.Shortener {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: $gray;
+  padding: 5rem 4rem 0 4rem;
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 3rem 0 3rem;
+    width: 100%;
+    height: 9rem;
+    border-radius: 10px;
+    background-image: url("../../assets/images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-color: $darkViolet;
+  }
+  &__input {
+    display: flex;
+    width: 80%;
+    height: 3rem;
+    padding-left: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 6px;
+  }
+  &__button {
+    width: fit-content;
+    @include btnPrymary;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__linkDisplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0 2rem 0 2rem;
+  }
+  &__originalLink {
+    width: 60%;
+    padding: 1rem 0 1rem 0;
+    color: #000000;
+    text-decoration: none;
+  }
+  &__shortenedLinkDisplay {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__shortenedLink {
+    padding: 1rem 0 1rem 0;
+    color: $cyan;
+    text-decoration: none;
+  }
+  &__copyButton {
+    @include btnPrymary;
+    height: 2rem;
+    min-width: 6rem;
+  }
+}
