@@ -7,6 +7,7 @@ const Shortener = () => {
     <div className="Shortener">
       <form className="Shortener__form">
         <input
+          id="link"
           className="Shortener__input"
           type="text"
           placeholder="Shorten a link here"
