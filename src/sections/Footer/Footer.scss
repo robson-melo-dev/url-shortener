@@ -1,0 +1,54 @@
+@import "../../assets/sass/colors";
+@import "../../assets/sass/generalMixins";
+.Footer {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 20rem;
+  width: 100%;
+  background-color: $veryDarkViolet;
+  padding-top: 4rem;
+
+  &__logo {
+    fill: #ffffff;
+    transition: fill 0.2s ease-in-out;
+  }
+  &__logo:hover {
+    fill: $cyan;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+  }
+  &__linksGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 14px;
+  }
+  &__linkTitle {
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 1rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &__linkTitle:hover,
+  &__link:hover {
+    color: $cyan;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2rem;
+  }
+  &__social {
+    fill: #ffffff;
+    transition: fill 0.2s ease-in-out;
+  }
+  &__social:hover {
+    fill: $cyan;
+  }
+}

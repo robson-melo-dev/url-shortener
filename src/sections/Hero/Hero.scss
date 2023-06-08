@@ -21,7 +21,9 @@
     gap: 2rem;
   }
   &__button {
-    @include linkPrymary;
+    @include btnPrymary;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 30px;
   }
   &__title {
     font-weight: 700;

@@ -1,0 +1,23 @@
+@import "../../assets/sass/colors";
+@import "../../assets/sass/generalMixins";
+
+.Boost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 15rem;
+  width: 100%;
+  background-color: $darkViolet;
+  background-image: url("../../assets//images/bg-boost-desktop.svg");
+  &__title {
+    color: #ffffff;
+    font-size: 36px;
+  }
+  &__button {
+    @include btnPrymary;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 30px;
+  }
+}

@@ -77,5 +77,8 @@
     @include btnPrymary;
     height: 2rem;
     min-width: 6rem;
+    &:hover {
+      background-color: $darkViolet;
+    }
   }
 }
