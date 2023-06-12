@@ -39,3 +39,33 @@
     height: 500px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .Hero {
+    padding: 1rem;
+    overflow-x: hidden;
+    &__container {
+      flex-direction: column-reverse;
+      min-height: 100vh;
+      justify-content: space-evenly;
+    }
+    &__img {
+      max-height: 40%;
+      aspect-ratio: 1 / 0.83;
+      width: auto;
+      align-self: flex-start;
+    }
+    &__presentation {
+      max-width: 100%;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &__description {
+      font-size: 12px;
+      color: $gray;
+    }
+  }
+}

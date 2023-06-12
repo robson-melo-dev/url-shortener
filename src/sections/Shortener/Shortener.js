@@ -40,9 +40,9 @@ const Shortener = () => {
     }
   }
 
-  function handleCopy(text, id) {
+  function handleCopy(text) {
     navigator.clipboard.writeText(text);
-    setIsCopied(id);
+    setIsCopied(text);
   }
 
   return (
@@ -84,7 +84,7 @@ const Shortener = () => {
                   className="Shortener__copyButton"
                   onClick={() => handleCopy(shortenedUrl)}
                 >
-                  {isCopied?.id === link.code ? "Copied" : "Copy"}
+                  {isCopied === shortenedUrl ? "Copied" : "Copy"}
                 </button>
               </div>
             </div>

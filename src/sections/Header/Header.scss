@@ -29,3 +29,18 @@
     @include linkPrymary;
   }
 }
+@media screen and (max-width: 1024px) {
+  .Header {
+    height: 2rem;
+    &__buttons {
+      display: none;
+    }
+    &__logo {
+      max-height: 1.5rem;
+    }
+    &__logo + &__link,
+    &__link + &__link {
+      display: none;
+    }
+  }
+}
